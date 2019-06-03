@@ -16,4 +16,12 @@ public abstract class Organism {
     public int getLifeForce() {
         return lifeForce;
     }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public void setLifeForce(int lifeForce) {
+        this.lifeForce = lifeForce;
+    }
 }

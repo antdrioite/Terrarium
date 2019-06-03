@@ -1,5 +1,7 @@
 package be.vdab.domain;
 
+import java.util.List;
+
 public class GameController {
 
     Terrarium terrarium;
@@ -15,37 +17,41 @@ public class GameController {
         terrarium.add(plant);
     }
     public void activateOrganisms(){
-        for(Organism organism : terrarium.getAllOrganisms){
+        //first make all organisms move
+        for(Organism organism : terrarium.getAllOrganisms()){
+            organism.move();
+        }
+        //then let Carnivores interact with environment
+        for(Organism organism : terrarium.getAllOrganisms()){
             if(organism instanceof Carnivore.class){
-                organism.move();
                 organism.interactWithEnvironment();
             }
         }
-        for(Organism organism : terrarium.getAllOrganisms){
+        //then let Herbivores interact with environment
+        for(Organism organism : terrarium.getAllOrganisms()){
             if(organism instanceof Herbivore.class){
-                organism.move();
                 organism.interactWithEnvironment();
             }
         }
     }
     public void printTerrarium(){
-        //not very efficient but temporary
+        //not very efficient but temporary, size of Terrarium should be variable
         for(int i=0;i>5;i++){
             for(int j=0;j>5;j++){
-                for(Organism organism : terrarium.getAllOrganisms){
+                for(Organism organism : terrarium.getAllOrganisms()){
                     if(organism.getLocation().getX() == i && organism.getLocation().getY() == j){
                         if(organism instanceof Plant.class){
-                            System.out.print("P");
+                            System.out.print("P\t");
                         }
                         else if(organism instanceof Herbivore.class){
-                            System.out.print("H");
+                            System.out.print("H\t");
                         }
                         else if(organism instanceof Carnivore.class){
-                            System.out.print("C");
+                            System.out.print("C\t");
                         }
                     }
                     else{
-                        System.out.print(".");
+                        System.out.print(".\t");
                     }
                 }
 

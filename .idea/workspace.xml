@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+    <list default="true" id="d38f702c-6c5a-45ee-863b-e4b65b1d8d18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/Main.java" afterDir="false" />
+=======
+<<<<<<< HEAD
     <list default="true" id="1a1c9184-e4c8-47e2-b044-0f2c441e8c09" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/be/vdab/domain/Location.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/be/vdab/domain/Organism.java" afterDir="false" />
@@ -16,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/GameController.java" afterDir="false" />
 >>>>>>> 91a2749f4d2da29c3ef075ca13926e1c32c7fc95
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +33,22 @@
   </component>
   <component name="DefaultGradleProjectSettings">
 <<<<<<< HEAD
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+=======
+<<<<<<< HEAD
     <option name="isMigrated" value="true" />
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+=======
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Organism.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -92,12 +110,15 @@
                 <element signature="e#175#176#0" expanded="true" />
 >>>>>>> 91a2749f4d2da29c3ef075ca13926e1c32c7fc95
               </folding>
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
+=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -105,6 +126,7 @@
       </list>
     </option>
   </component>
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -112,12 +134,16 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/be/vdab/Main.java" />
+=======
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Plant.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Location.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Organism.java" />
 =======
         <option value="$PROJECT_DIR$/src/be/vdab/domain/GameController.java" />
 >>>>>>> 91a2749f4d2da29c3ef075ca13926e1c32c7fc95
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
       </list>
     </option>
   </component>
@@ -127,19 +153,42 @@
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+<<<<<<< HEAD
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
       <pane id="PackagesPane" />
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
+              <item name="TerrariumScrum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TerrariumScrum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TerrariumScrum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TerrariumScrum" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TerrariumScrum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TerrariumScrum" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vdab" type="462c0819:PsiDirectoryNode" />
+            </path>
+=======
               <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
               <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -161,10 +210,15 @@
               <item name="vdab" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
       <pane id="Scope" />
     </panes>
   </component>
@@ -173,6 +227,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,6 +277,8 @@
     </configuration>
   </component>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1a1c9184-e4c8-47e2-b044-0f2c441e8c09" name="Default Changelist" comment="" />
@@ -237,11 +305,25 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
 =======
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="d38f702c-6c5a-45ee-863b-e4b65b1d8d18" name="Default Changelist" comment="" />
+      <created>1559557229973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559557229973</updated>
+      <workItem from="1559557238590" duration="2645000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2645000" />
+=======
       <changelist id="2fe55afc-87c1-4134-823b-0b0090f17295" name="Default Changelist" comment="" />
       <created>1559559078972</created>
       <option name="number" value="Default" />
@@ -261,11 +343,27 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1229000" />
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+=======
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="DB Browser" />
@@ -284,6 +382,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Console" />
 >>>>>>> 91a2749f4d2da29c3ef075ca13926e1c32c7fc95
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -291,6 +390,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+=======
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -317,11 +427,19 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
 >>>>>>> 91a2749f4d2da29c3ef075ca13926e1c32c7fc95
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+=======
 <<<<<<< HEAD
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -389,6 +507,7 @@
             <element signature="e#175#176#0" expanded="true" />
 >>>>>>> 91a2749f4d2da29c3ef075ca13926e1c32c7fc95
           </folding>
+>>>>>>> 15b15aafb81cf85baf9b69d6a65d531aedfaa260
         </state>
       </provider>
     </entry>

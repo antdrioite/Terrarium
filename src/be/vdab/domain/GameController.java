@@ -1,5 +1,7 @@
 package be.vdab.domain;
 
+import java.util.List;
+
 public class GameController {
 
     Terrarium terrarium;
@@ -15,7 +17,7 @@ public class GameController {
         terrarium.add(plant);
     }
     public void activateOrganisms(){
-        //first make all organisms moe
+        //first make all organisms move
         for(Organism organism : terrarium.getAllOrganisms()){
             organism.move();
         }

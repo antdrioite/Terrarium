@@ -1,6 +1,7 @@
 package be.vdab;
 
 import be.vdab.domain.GameController;
+import be.vdab.domain.Terrarium;
 
 import java.util.Scanner;
 
@@ -20,8 +21,8 @@ public class Main {
 		System.out.println("druk v voor volgende dag, druk s om te stoppen");
 	    //vraag en check input aan de user
 		String input = scanner.next();
-		while(input != "s") {
-			if (input == "v") {
+		while(!input.equalsIgnoreCase("s")) {
+			if (input.equalsIgnoreCase("v")){
 				controller.spawnPlants();
 				controller.activateOrganisms();
 				controller.printTerrarium();

@@ -12,27 +12,28 @@ public class GameController {
 
     public void spawnPlants(){
         List<Location> emptyLocations = terrarium.getEmptyLocations();
-        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
         Plant plant = new Plant(emptyLocations.get(randomNumber), 1); //one lifeforce
-        terrarium.add(plant);
+        terrarium.addOrganism(plant);
     }
     public void activateOrganisms(){
-        //first make all organisms move
         //then let Carnivores interact with environment
         for(Organism organism : terrarium.getAllOrganisms()){
-            if(organism instanceof Carnivore.class){
-                boolean hasInteracted = organism.interactWithEnvironment();
+            if(organism instanceof Carnivore){
+                Carnivore carnivore = (Carnivore) organism;
+                boolean hasInteracted = carnivore.interactWithEnvironment();
                 if(!hasInteracted){
-                    organism.move();
+                    carnivore.move();
                 }
             }
         }
         //then let Herbivores interact with environment
         for(Organism organism : terrarium.getAllOrganisms()){
-            if(organism instanceof Herbivore.class){
-                boolean hasInteracted = organism.interactWithEnvironment();
+            if(organism instanceof Herbivore){
+                Herbivore herbivore = (Herbivore) organism;
+                boolean hasInteracted = herbivore.interactWithEnvironment();
                 if(!hasInteracted){
-                    organism.move();
+                    herbivore.move();
                 }
             }
         }
@@ -43,13 +44,13 @@ public class GameController {
             for(int j=0;j>5;j++){
                 for(Organism organism : terrarium.getAllOrganisms()){
                     if(organism.getLocation().getX() == i && organism.getLocation().getY() == j){
-                        if(organism instanceof Plant.class){
+                        if(organism instanceof Plant){
                             System.out.print("P\t");
                         }
-                        else if(organism instanceof Herbivore.class){
+                        else if(organism instanceof Herbivore){
                             System.out.print("H\t");
                         }
-                        else if(organism instanceof Carnivore.class){
+                        else if(organism instanceof Carnivore){
                             System.out.print("C\t");
                         }
                     }

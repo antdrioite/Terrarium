@@ -1,4 +1,4 @@
-package be.vdab.domain;
+package be.vdab.terarium;
 
 public class Location {
 	
@@ -10,14 +10,12 @@ public class Location {
 		this.x = x;
 		this.y = y;
 	}
-	public int getX() {
-		return x;
-	}
-	
-	//public void setX(int x) {
-	//	this.x = x;
+	//public int getX() {
+	//	return x;
 	//}
-	
+	public void setX(int x) {
+		this.x = x;
+	}
 	public int getY() {
 		return y;
 	}

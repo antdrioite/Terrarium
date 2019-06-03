@@ -40,10 +40,13 @@ public class GameController {
     }
     public void printTerrarium(){
         //not very efficient but temporary, size of Terrarium should be variable
-        for(int i=0;i>5;i++){
-            for(int j=0;j>5;j++){
+        for(int x=0;x<=5;x++){
+            for(int y=0;y<=5;y++){
+                Location location = new Location(x, y);
+                boolean organismFound = false;
                 for(Organism organism : terrarium.getAllOrganisms()){
-                    if(organism.getLocation().getX() == i && organism.getLocation().getY() == j){
+                    if(organism.getLocation().equals(location)){
+                        organismFound = true;
                         if(organism instanceof Plant){
                             System.out.print("P\t");
                         }
@@ -54,11 +57,10 @@ public class GameController {
                             System.out.print("C\t");
                         }
                     }
-                    else{
-                        System.out.print(".\t");
-                    }
                 }
-
+                if(!organismFound){
+                    System.out.print(".\t");
+                }
             }
             System.out.println();
         }

@@ -43,11 +43,11 @@ public class Terrarium {
 
 	public List<Location> getEmptyLocations() {
 		
-		List<Organism> legePlekken = new ArrayList<>;
+		List<Location> legePlekken = new ArrayList<>[];
 		
 		for (Organism organism : grid) {
 			if (!(organism instanceof Organism)) {
-				legePlekken.add(organism);	
+				legePlekken.add(organism.getLocation());	
 			}
 		}
 		return legePlekken;

@@ -6,7 +6,8 @@ public abstract class Animal extends Organism {
         super(location, lifeForce);
     }
 
-    public void move() {
+    public boolean move() {
+        return true;
     }
 
     public abstract boolean interactWithEnviorment();

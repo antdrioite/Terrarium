@@ -10,13 +10,6 @@ public class Herbivore extends Animal{
 
     @Override
     public boolean interactWithEnviorment() {
-        Location neighbourLocation = new Location(this.getLocation().getxPosition() + 1, this.getLocation().getyPosition());
-        Organism neighbourOrganisme = Terrarium.getOrganism(neighbourLocation);
-        switch (neighbourOrganisme){
-            case neighbourOrganisme.equals(Plant):
-                this.setLifeForce(this.getLifeForce()+neighbourLocation.)
-        }
-
-                (neighbourOrganisme.equals())
+        return true;
     }
 }

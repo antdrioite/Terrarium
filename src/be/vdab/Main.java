@@ -1,6 +1,7 @@
 package be.vdab;
 
 import be.vdab.domain.GameController;
+import be.vdab.domain.Terrarium;
 
 import java.util.Scanner;
 

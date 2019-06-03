@@ -22,7 +22,7 @@ public class Terrarium {
 	
 	public Terrarium() {
 		
-		grid = new ArrayList<>;
+		grid = new ArrayList<>();
 		Location een = new Location(0,0);
 		Location twee = new Location(0,1);
 		Location drie = new Location(0,3);
@@ -30,12 +30,12 @@ public class Terrarium {
 		Location vijf = new Location(3,0);
 		Location zes = new Location(3,1);
 		
-		grid.add(new Plant(twee));
-		grid.add(new Herbivore(een));
-		grid.add(new Herbivore(drie));
-		grid.add(new Herbivore(vier));
-		grid.add(new Herbivore(zes));
-		grid.add(new Carnivore(vijf);)
+		grid.add(new Plant(twee, 1));
+		grid.add(new Herbivore(een, 0));
+		grid.add(new Herbivore(drie, 0));
+		grid.add(new Herbivore(vier, 0));
+		grid.add(new Herbivore(zes, 0));
+		grid.add(new Carnivore(vijf, 0));
 		
 	}
 
@@ -43,7 +43,7 @@ public class Terrarium {
 
 	public List<Location> getEmptyLocations() {
 		
-		List<Location> legePlekken = new ArrayList<>[];
+		List<Location> legePlekken = new ArrayList<>();
 		
 		for (Organism organism : grid) {
 			if (!(organism instanceof Organism)) {
@@ -60,7 +60,7 @@ public class Terrarium {
 
 	public List<Organism> getAllOrganisms() {
 		
-		List<Organism> alleOrganisms = new ArrayList<>;
+		List<Organism> alleOrganisms = new ArrayList<>();
 		
 		for(Organism organism : grid) {
 			if (organism instanceof Organism) {

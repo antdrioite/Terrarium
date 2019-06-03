@@ -6,5 +6,6 @@ public abstract class Animal extends Organism{
 
     public void interactWithEnviorment() {
     Location  neighbourLocation = new Location(this.getLocation().getxPosition()+1,this.getLocation().getyPosition());
+
     }
 }

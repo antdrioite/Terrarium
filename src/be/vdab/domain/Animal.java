@@ -7,6 +7,8 @@ public abstract class Animal extends Organism {
     }
 
     public void move() {
+        Location currentLocation = this.getLocation();
+
     }
 
     public abstract boolean interactWithEnviorment();

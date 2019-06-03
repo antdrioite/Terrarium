@@ -10,5 +10,5 @@ public abstract class Animal extends Organism {
         return true;
     }
 
-    public abstract boolean interactWithEnviorment();
+    public abstract boolean interactWithEnvironment();
 }

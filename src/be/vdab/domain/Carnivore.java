@@ -1,8 +1,8 @@
 package be.vdab.domain;
 
-public class Herbivore extends Animal{
+public class Carnivore extends Animal{
 
-    public Herbivore(Location location, int lifeForce) {
+    public Carnivore(Location location, int lifeForce) {
         super(location, lifeForce);
     }
 

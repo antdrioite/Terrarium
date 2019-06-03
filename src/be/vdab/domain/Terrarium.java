@@ -1,4 +1,4 @@
-package be.vdab.terarium;
+package be.vdab.domain;
 
 public class Terrarium {
 	
@@ -38,7 +38,7 @@ public class Terrarium {
 
 
 
-	public Location getEmptyLocations() {
+	public List<Location> getEmptyLocations() {
 		
 		List<Organism> legePlekken = new ArrayList<>;
 		
@@ -55,7 +55,7 @@ public class Terrarium {
 		this.grid = grid;
 	}
 
-	public Organism getAllOrganisms() {
+	public List<Organism> getAllOrganisms() {
 		
 		List<Organism> alleOrganisms = new ArrayList<>;
 		

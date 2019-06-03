@@ -19,7 +19,7 @@ public class Main {
 	    controller.printTerrarium();
 		System.out.println("druk v voor volgende dag, druk s om te stoppen");
 	    //vraag en check input aan de user
-		String input = scanner.nextLine();
+		String input = scanner.next();
 		while(input != "s") {
 			if (input == "v") {
 				controller.spawnPlants();
@@ -30,7 +30,7 @@ public class Main {
 				System.out.println("foute input");
 			}
 			System.out.println("druk v voor volgende dag, druk s om te stoppen");
-			input = scanner.nextLine();
+			input = scanner.next();
 		}
     }
 }

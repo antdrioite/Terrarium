@@ -3,7 +3,7 @@ package be.vdab.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Terrarium {
+public class  Terrarium {
 	
 	List<Organism> grid;
 	

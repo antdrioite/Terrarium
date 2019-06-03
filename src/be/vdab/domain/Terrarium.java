@@ -1,4 +1,4 @@
-package be.vdab.terarium;
+package be.vdab.domain;
 
 public class Terrarium {
 	
@@ -28,17 +28,17 @@ public class Terrarium {
 		Location zes = new Location(3,1);
 		
 		grid.add(new Plant(twee));
-		grid.add(new Herbivoor(een));
-		grid.add(new Herbivoor(drie));
-		grid.add(new Herbivoor(vier));
-		grid.add(new Herbivoor(zes));
-		grid.add(new Carnivoor(vijf);)
+		grid.add(new Herbivore(een));
+		grid.add(new Herbivore(drie));
+		grid.add(new Herbivore(vier));
+		grid.add(new Herbivore(zes));
+		grid.add(new Carnivore(vijf);)
 		
 	}
 
 
 
-	public Location getEmptyLocations() {
+	public List<Location> getEmptyLocations() {
 		
 		List<Organism> legePlekken = new ArrayList<>;
 		
@@ -55,7 +55,7 @@ public class Terrarium {
 		this.grid = grid;
 	}
 
-	public Organism getAllOrganisms() {
+	public List<Organism> getAllOrganisms() {
 		
 		List<Organism> alleOrganisms = new ArrayList<>;
 		

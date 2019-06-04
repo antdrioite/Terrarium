@@ -5,6 +5,9 @@ public abstract class Organism {
     private int lifeForce;
 
     public Organism(Location location, int lifeForce) {
+        if(location == null || !(lifeForce>=0)){
+            throw new IllegalArgumentException();
+        }
         this.location = location;
         this.lifeForce = lifeForce;
     }

@@ -5,7 +5,7 @@ import java.util.List;
 public class Carnivore extends Animal{
 
 
-    public Carnivore(Terrarium terrarium, Location location, int lifeForce) {
+    public Carnivore(Location location, int lifeForce, Terrarium terrarium) {
         super(location, lifeForce, terrarium);
     }
 

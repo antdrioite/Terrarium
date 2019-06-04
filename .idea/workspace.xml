@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="" />
+    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Organism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Organism.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -35,8 +42,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+              <folding>
+                <element signature="e#166#167#0" expanded="true" />
+                <element signature="e#219#220#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="62" column="2" lean-forward="true" selection-start-line="62" selection-start-column="2" selection-end-line="65" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#2286#2287#0" expanded="true" />
+                <element signature="e#2326#2327#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,8 +71,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Location.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -62,30 +95,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+            <state relative-caret-position="153">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
-                <element signature="e#197#198#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <folding>
+                <element signature="e#1426#1427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/test/GameControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Organism.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="119">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
               <folding>
                 <element signature="e#348#349#0" expanded="true" />
                 <element signature="e#380#381#0" expanded="true" />
@@ -96,6 +141,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
@@ -103,8 +155,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Location.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/GameController.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/CarnivoreTest.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Animal.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Organism.java" />
       </list>
     </option>
   </component>
@@ -163,9 +222,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.vdab.domain" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -179,23 +249,93 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.vdab.Main" />
+  <component name="RunManager" selected="JUnit.CarnivoreTest">
+    <configuration name="CarnivoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TerrariumScrum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.vdab.*" />
+          <option name="PATTERN" value="be.vdab.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNegativeLifeForce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoreCannotBeCreatedWithNegativeLifeForce" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNullLocaion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoreCannotBeCreatedWithNullLocaion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNullTerrarium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoreCannotBeCreatedWithNullTerrarium" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoreTakesLikeForceOfHerbivore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoreTakesLikeForceOfHerbivore" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CarnivoreTest" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreTakesLikeForceOfHerbivore" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreCannotBeCreatedWithNullTerrarium" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreCannotBeCreatedWithNegativeLifeForce" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreCannotBeCreatedWithNullLocaion" />
       </list>
     </recent_temporary>
   </component>
@@ -213,13 +353,54 @@
       <workItem from="1559577933821" duration="46000" />
       <workItem from="1559577993988" duration="5000" />
     </task>
+    <task id="LOCAL-00001" summary="Carnivores moving and eating">
+      <created>1559638950174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559638950174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CarnivoreTest_carnivoreEatsHerbivoresToTheRight - 2019.06.04 at 11h 30m 02s.xml">
+      <configuration name="CarnivoreTest.carnivoreEatsHerbivoresToTheRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreEatsHerbivoresToTheRight - 2019.06.04 at 11h 30m 54s.xml">
+      <configuration name="CarnivoreTest.carnivoreEatsHerbivoresToTheRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreEatsHerbivoresToTheRight - 2019.06.04 at 11h 32m 00s.xml">
+      <configuration name="CarnivoreTest.carnivoreEatsHerbivoresToTheRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDoesNotEatPlants - 2019.06.04 at 11h 32m 56s.xml">
+      <configuration name="CarnivoreTest.carnivoreDoesNotEatPlants" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreOnlyEatsHerbivoresToTheRight - 2019.06.04 at 11h 35m 07s.xml">
+      <configuration name="CarnivoreTest.carnivoreOnlyEatsHerbivoresToTheRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDoesNotEatPlants - 2019.06.04 at 11h 35m 13s.xml">
+      <configuration name="CarnivoreTest.carnivoreDoesNotEatPlants" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDoesNotEatHerbivoresToTheLeftTopOrBottom - 2019.06.04 at 11h 36m 50s.xml">
+      <configuration name="CarnivoreTest.carnivoreDoesNotEatHerbivoresToTheLeftTopOrBottom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreMovesIfThereIsNoMeal - 2019.06.04 at 11h 38m 29s.xml">
+      <configuration name="CarnivoreTest.carnivoreMovesIfThereIsNoMeal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreCannotBeCreatedWithNullLocaion - 2019.06.04 at 11h 40m 02s.xml">
+      <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNullLocaion" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest - 2019.06.04 at 11h 40m 26s.xml">
+      <configuration name="CarnivoreTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96000" />
+    <option name="totallyTimeSpent" value="3032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -231,7 +412,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32969603" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
@@ -248,7 +429,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Run" order="8" weight="0.32949126" />
+      <window_info anchor="right" id="Run" order="8" visible="true" weight="0.32885906" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -287,14 +468,12 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xml Commit" />
+    <MESSAGE value="Carnivores moving and eating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carnivores moving and eating" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -304,8 +483,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Location.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/GameControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="62" column="2" lean-forward="true" selection-start-line="62" selection-start-column="2" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="e#2326#2327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding>
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="e#1426#1427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Organism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

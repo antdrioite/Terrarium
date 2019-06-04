@@ -35,7 +35,7 @@ public class Terrarium {
 		grid.add(new Herbivore(drie, 0, this));
 		grid.add(new Herbivore(vier, 0, this));
 		grid.add(new Herbivore(zes, 0, this));
-		grid.add(new Carnivore( this, vijf, 0));
+		grid.add(new Carnivore( vijf, 0, this));
 
 	}
 

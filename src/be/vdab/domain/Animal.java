@@ -7,6 +7,9 @@ public abstract class Animal extends Organism {
 
     public Animal(Location location, int lifeForce, Terrarium terrarium) {
         super(location, lifeForce);
+        if(terrarium == null){
+            throw new IllegalArgumentException();
+        }
         this.terrarium = terrarium;
     }
 

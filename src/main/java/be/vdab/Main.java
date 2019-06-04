@@ -11,6 +11,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		private int whichDay = 1;
+
 		System.out.println("Welkom bij Terrarium. Zo begint jouw terrarium:");
 
         //maak een terrarium en gamecontroller object
@@ -18,6 +20,8 @@ public class Main {
 	    GameController controller = new GameController(terrarium);
 	    //print dag 1
 	    controller.printTerrarium();
+		System.out.println("Dag 1");
+
 		System.out.println("druk v voor volgende dag, druk s om te stoppen");
 	    //vraag en check input aan de user
 		String input = scanner.nextLine();
@@ -26,6 +30,9 @@ public class Main {
 				controller.spawnPlants();
 				controller.activateOrganisms();
 				controller.printTerrarium();
+				whichDay++;
+				System.out.println("Dag " + whichDay);
+
 			}
 			else {
 				System.out.println("foute input");

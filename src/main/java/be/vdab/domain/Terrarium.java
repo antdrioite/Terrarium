@@ -4,77 +4,109 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Terrarium {
-	
+
 	List<Organism> grid;
-	
+
 	public void addOrganism(Organism organism) {
-		grid.add(organism);
-	
+		if (grid.size() < 35) {
+            if (!grid.contains(organism)) {
+                grid.add(organism);
+            } else if (grid.contains(organism)) {
+                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig ");
+            }
+
+		} else {
+			throw new IllegalArgumentException(" de index is meer dan 36 ");
+		}
 	}
-	
-	
-	
-	//public Location getXemptyLocations() {
-	//	
-	//}
-	
-	
-	
+
+    public void addNewHerbivore() {
+        List<Location> emptyLocations;
+        emptyLocations = this.getEmptyLocations();
+        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 1, this));
+    }
+
 	public Terrarium() {
-		
-		grid = new ArrayList<>();
-		Location een = new Location(0,0);
-		Location twee = new Location(0,1);
-		Location drie = new Location(0,3);
-		Location vier = new Location(0,4);
-		Location vijf = new Location(3,0);
-		Location zes = new Location(3,1);
-		
-		grid.add(new Plant(twee, 1));
-		grid.add(new Herbivore(een, 0));
-		grid.add(new Herbivore(drie, 0));
-		grid.add(new Herbivore(vier, 0));
-		grid.add(new Herbivore(zes, 0));
-		grid.add(new Carnivore(vijf, 0));
-		
-	}
+
+        grid = new ArrayList<>(35);
+		//minimum capcity max capacity kan je niet instellen
 
 
+        List<Location> emptyLocations;
+        emptyLocations = this.getEmptyLocations();
+
+        //in het geval dat het randomnummer hetzelfde is, zal er een fout zijn
+        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Plant(emptyLocations.get(randomNumber), 1)); //one lifeforce
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Carnivore(emptyLocations.get(randomNumber), 0, this));
+    }
+
+    //grid heeft een fixed grote nodig nu
 
 	public List<Location> getEmptyLocations() {
-		
-		List<Location> legePlekken = new ArrayList<>();
-		
-		for (Organism organism : grid) {
-			if (!(organism instanceof Organism)) {
-				legePlekken.add(organism.getLocation());	
+
+
+		List<Location> occupiedPlaces = new ArrayList<>();
+		for(Organism organism : grid){
+			occupiedPlaces.add(organism.getLocation());
+		}
+		List<Location> emptyPlaces = new ArrayList<>();
+		for(int i=0;i<=5;i++){
+			for(int j=0;j<=5;j++){
+				Location location = new Location(i, j);
+				if(!emptyPlaces.contains(location)){
+					emptyPlaces.add(location);
+
+				}
 			}
 		}
-		return legePlekken;
+		return emptyPlaces;
+
 	}
-	
+
 	public Terrarium(List<Organism> grid) {
 		super();
 		this.grid = grid;
+
+
 	}
 
-	public List<Organism> getAllOrganisms() {
-		
-		List<Organism> alleOrganisms = new ArrayList<>();
-		
+    public List<Organism> getAllOrganisms() {
+
+		List<Organism> allOrganisms = new ArrayList<>();
+
 		for(Organism organism : grid) {
 			if (organism instanceof Organism) {
-				alleOrganisms.add(organism);
-			}	
+				allOrganisms.add(organism);
+			}
 		}
-		return alleOrganisms;
+		return allOrganisms;
 	}
-	
-	
-	
-	
-	
-	
-	
+
+	public void remove(Organism organism){
+
+        grid.remove(organism);
+	}
+
+
+
+
+
+
 
 }

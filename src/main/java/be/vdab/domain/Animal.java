@@ -11,34 +11,32 @@ public abstract class Animal extends Organism {
     }
 
     public boolean move() {
+        boolean foundEmptyLocation = false;
         int currentX = this.getLocation().getX();
         int currentY = this.getLocation().getY();
-        int newX = (int) (Math.random() * (((currentX + 1) - (currentX - 1)) + 1)) + (currentX - 1);
-        int newY = currentY;
-        if (newX == currentX) {
-            newY = (int) (Math.random() * (((currentY + 1) - (currentY - 1)) + 1)) + (currentY - 1);
-        }
-        if (newX > 5) {
-            newX = 0;
-        }
-        if (newY > 5) {
-            newY = 0;
-        }
-        Location newLocation = new Location(newX, newY);
-        List<Location> emptyLocations = terrarium.getEmptyLocations();
-        for (Location emptyLocation : emptyLocations) {
-            if (emptyLocation.equals(newLocation)) {
-                this.getLocation().setX(newX);
-                this.getLocation().setY(newY);
-                return true;
+        while (!foundEmptyLocation) {
+            int newX = (int) (Math.random() * (((currentX + 1) - (currentX - 1)) + 1)) + (currentX - 1);
+            int newY = currentY;
+            while ((newX == currentX) && (newY == currentY)) {
+                newY = (int) (Math.random() * (((currentY + 1) - (currentY - 1)) + 1)) + (currentY - 1);
+            }
+            if (newX > 5) {
+                newX = 0;
+            }
+            if (newY > 5) {
+                newY = 0;
+            }
+            Location newLocation = new Location(newX, newY);
+            List<Location> emptyLocations = terrarium.getEmptyLocations();
+            for (Location emptyLocation : emptyLocations) {
+                if (emptyLocation.equals(newLocation) && !(newLocation.equals(this.getLocation()))) {
+                    this.setLocation(newLocation);
+                    foundEmptyLocation = true;
+                }
             }
         }
-        return false;
+        return true;
     }
 
     public abstract boolean interactWithEnvironment();
-
-    public Terrarium getTerrarium() {
-        return terrarium;
-    }
 }

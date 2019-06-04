@@ -40,8 +40,8 @@ public class GameController {
     }
     public void printTerrarium(){
         //not very efficient but temporary, size of Terrarium should be variable
-        for(int x=0;x<=5;x++){
-            for(int y=0;y<=5;y++){
+        for(int y=0;y<=5;y++){
+            for(int x=0;x<=5;x++){
                 Location location = new Location(x, y);
                 boolean organismFound = false;
                 for(Organism organism : terrarium.getAllOrganisms()){

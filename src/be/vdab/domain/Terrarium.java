@@ -23,7 +23,7 @@ public class Terrarium {
 	public Terrarium() {
 
 		grid = new ArrayList<>();
-		Location een = new Location(0,0);
+		Location een = new Location(4,0);
 		Location twee = new Location(0,1);
 		Location drie = new Location(0,3);
 		Location vier = new Location(0,4);
@@ -35,7 +35,7 @@ public class Terrarium {
 		grid.add(new Herbivore(drie, 0));
 		grid.add(new Herbivore(vier, 0));
 		grid.add(new Herbivore(zes, 0));
-		grid.add(new Carnivore(vijf, 0));
+		grid.add(new Carnivore(this, vijf, 0));
 
 	}
 
@@ -77,6 +77,10 @@ public class Terrarium {
 			}
 		}
 		return alleOrganisms;
+	}
+
+	public void remove(Organism organism){
+		grid.remove(organism);
 	}
 
 

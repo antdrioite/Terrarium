@@ -53,11 +53,11 @@ public class CarnivoreTest {
     }
 
     @Test
-    public void carnivoreMovesIfThereIsNoMeal(){
+    public void carnivoreDoesNotMoveIfThereIsAPlantToTheRight(){
         Plant plant = new Plant(new Location(2, 1), 1);
         terrarium.addOrganism(plant);
-        boolean willNotMove = carnivore.interactWithEnvironment();
-        assertTrue(!willNotMove);
+        boolean willMove = carnivore.interactWithEnvironment();
+        assertTrue(!willMove);
     }
 
     @Test

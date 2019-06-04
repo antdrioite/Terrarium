@@ -4,6 +4,7 @@
     <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="420">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
                 <element signature="e#166#167#0" expanded="true" />
                 <element signature="e#219#220#0" expanded="true" />
@@ -51,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="127" column="73" lean-forward="true" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
+            <state relative-caret-position="236">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
@@ -278,7 +279,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarnivoreTest.carnivoreDoesNotMoveIfThereIsAPlantToTheRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TerrariumScrum" />
       <extension name="coverage">
         <pattern>
@@ -288,7 +289,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="be.vdab.test" />
       <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
-      <option name="METHOD_NAME" value="carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" />
+      <option name="METHOD_NAME" value="carnivoreDoesNotMoveIfThereIsAPlantToTheRight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -329,10 +330,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CarnivoreTest" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreDoesNotMoveIfThereIsAPlantToTheRight" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CarnivoreTest.carnivoresOnLastColumnInteractWithOrganismsOnFirstColumn" />
         <item itemvalue="JUnit.CarnivoreTest.carnivoresEvenlyMatchedDontFight" />
-        <item itemvalue="JUnit.CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" />
       </list>
     </recent_temporary>
   </component>
@@ -385,28 +386,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559643813581</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Carnivore minor bug fix">
+      <created>1559647048452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559647048452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarnivoreTest_carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce - 2019.06.04 at 12h 11m 31s.xml">
-      <configuration name="CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest_carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce - 2019.06.04 at 12h 11m 56s.xml">
-      <configuration name="CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest_carnivoresEvenlyMatchedDontFight - 2019.06.04 at 12h 13m 34s.xml">
-      <configuration name="CarnivoreTest.carnivoresEvenlyMatchedDontFight" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest_carnivoresEvenlyMatchedDontFight - 2019.06.04 at 12h 13m 41s.xml">
-      <configuration name="CarnivoreTest.carnivoresEvenlyMatchedDontFight" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest - 2019.06.04 at 12h 13m 49s.xml">
-      <configuration name="CarnivoreTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest - 2019.06.04 at 12h 14m 39s.xml">
-      <configuration name="CarnivoreTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CarnivoreTest_carnivoresOnLastColumnInteractWithOrganismsOnFirstColumn - 2019.06.04 at 12h 20m 37s.xml">
       <configuration name="CarnivoreTest.carnivoresOnLastColumnInteractWithOrganismsOnFirstColumn" configurationId="JUnit" />
     </history-entry>
@@ -419,9 +409,27 @@
     <history-entry file="CarnivoreTest - 2019.06.04 at 13h 12m 45s.xml">
       <configuration name="CarnivoreTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CarnivoreTest - 2019.06.04 at 13h 17m 03s.xml">
+      <configuration name="CarnivoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest - 2019.06.04 at 13h 27m 01s.xml">
+      <configuration name="CarnivoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDoesNotMoveIfThereIsAPlantToTheRight - 2019.06.04 at 13h 28m 56s.xml">
+      <configuration name="CarnivoreTest.carnivoreDoesNotMoveIfThereIsAPlantToTheRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest - 2019.06.04 at 13h 38m 01s.xml">
+      <configuration name="CarnivoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDoesNotMoveIfThereIsAPlantToTheRight - 2019.06.04 at 13h 38m 43s.xml">
+      <configuration name="CarnivoreTest.carnivoreDoesNotMoveIfThereIsAPlantToTheRight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest - 2019.06.04 at 13h 41m 59s.xml">
+      <configuration name="CarnivoreTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6170000" />
+    <option name="totallyTimeSpent" value="7766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -432,7 +440,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16912752" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16912752" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -454,7 +462,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Run" order="8" visible="true" weight="0.29194632" />
+      <window_info active="true" anchor="right" id="Run" order="8" visible="true" weight="0.29194632" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -500,7 +508,8 @@
     <MESSAGE value="Plant Test" />
     <MESSAGE value="Carnivore fighting dynamic (including tests)" />
     <MESSAGE value="Carnivore on last column interacts with organisms on first column (including test)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carnivore on last column interacts with organisms on first column (including test)" />
+    <MESSAGE value="Carnivore minor bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carnivore minor bug fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Location.java">
@@ -601,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="127" column="73" lean-forward="true" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
+        <state relative-caret-position="236">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
@@ -615,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="420">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding>
             <element signature="e#166#167#0" expanded="true" />
             <element signature="e#219#220#0" expanded="true" />

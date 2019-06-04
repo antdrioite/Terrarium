@@ -17,28 +17,45 @@ public class Carnivore extends Animal{
             toTheRight.setX(0);
         }
         for(Organism organism : organisms){
-            //eating
-            if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Herbivore.class)){
-                    this.setLifeForce(this.getLifeForce() + organism.getLifeForce());
-                    this.getTerrarium().remove(organism);
-                    return true;
-            }
-            //fighting
-            else if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Carnivore.class)){
-                if(organism.getLifeForce() == this.getLifeForce()){
-                    //do nothing
+            //check if there's an organism to the right
+            if(organism.getLocation().equals(toTheRight)){
+                //eat it if Herbivore
+                if(organism.getClass().equals(Herbivore.class)){
+                    eat((Herbivore) organism);
                 }
-                else if(organism.getLifeForce() > this.getLifeForce()){
-                    organism.setLifeForce(organism.getLifeForce() + this.getLifeForce());
-                    this.getTerrarium().remove(this);
+                //fight it if Carnivore
+                else if(organism.getClass().equals(Carnivore.class)){
+                    fight((Carnivore) organism);
                 }
-                else if(organism.getLifeForce() < this.getLifeForce()){
-                    this.setLifeForce(organism.getLifeForce() + this.getLifeForce());
-                    this.getTerrarium().remove(organism);
+                //moves if plant to the right
+                else if(organism.getClass().equals(Plant.class)){
+                    return false;
                 }
                 return true;
             }
         }
         return false;
     }
+
+
+    private void eat(Herbivore herbivore){
+        this.setLifeForce(this.getLifeForce() + herbivore.getLifeForce());
+        this.getTerrarium().remove(herbivore);
+    }
+
+    private void fight(Carnivore enemy){
+        if(enemy.getLifeForce() == this.getLifeForce()){
+            //do nothing
+        }
+        else if(enemy.getLifeForce() > this.getLifeForce()){
+            enemy.setLifeForce(enemy.getLifeForce() + this.getLifeForce());
+            this.getTerrarium().remove(this);
+        }
+        else if(enemy.getLifeForce() < this.getLifeForce()){
+            this.setLifeForce(enemy.getLifeForce() + this.getLifeForce());
+            this.getTerrarium().remove(enemy);
+        }
+    }
 }
+
+

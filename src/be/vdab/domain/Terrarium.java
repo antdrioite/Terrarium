@@ -7,15 +7,22 @@ public class Terrarium {
 
 	List<Organism> grid;
 
-	public void addOrganism(Organism organism) {
-		if (grid.size() < 35) {
-            if (!grid.contains(organism)) {
-                grid.add(organism);
-            } else if (grid.contains(organism)) {
-                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig ");
-            }
 
-		} else {
+	public void addOrganism(Organism organism) {
+		//Location occupiedLocation = new Location(organism.getLocation().getX(), organism.getLocation().getY());
+
+
+		if (grid.size() < 35) {
+			if (!grid.contains(organism)) {
+				grid.add(organism);
+
+			} else if (!this.getEmptyLocations().contains(organism.getLocation())) {
+				throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
+			}
+
+
+            } else if (grid.contains(organism)) {
+
 			throw new IllegalArgumentException(" de index is meer dan 36 ");
 		}
 	}

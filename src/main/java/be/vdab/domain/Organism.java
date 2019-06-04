@@ -9,6 +9,10 @@ public abstract class Organism {
         this.lifeForce = lifeForce;
     }
 
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
     public Location getLocation() {
         return location;
     }

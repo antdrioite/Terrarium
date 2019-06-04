@@ -8,10 +8,11 @@ import java.util.Scanner;
 public class Main {
 	//scanner om de inputs te lezen
 	private static final Scanner scanner = new Scanner(System.in);
+	private static int whichDay = 1;
 
 	public static void main(String[] args) {
 
-		private int whichDay = 1;
+
 
 		System.out.println("Welkom bij Terrarium. Zo begint jouw terrarium:");
 

@@ -22,61 +22,70 @@ public class Terrarium {
 
 	public Terrarium() {
 
-		grid = new ArrayList<>();
-		Location een = new Location(0,0);
-		Location twee = new Location(0,1);
-		Location drie = new Location(0,3);
-		Location vier = new Location(0,4);
-		Location vijf = new Location(3,0);
-		Location zes = new Location(3,1);
-
-		grid.add(new Plant(twee, 1));
-		grid.add(new Herbivore(een, 0));
-		grid.add(new Herbivore(drie, 0));
-		grid.add(new Herbivore(vier, 0));
-		grid.add(new Herbivore(zes, 0));
-		grid.add(new Carnivore(vijf, 0));
-
-	}
+        grid = new ArrayList<>();
 
 
+        List<Location> emptyLocations;
+        emptyLocations = this.getEmptyLocations();
+
+        //in het geval dat het randomnummer hetzelfde is, zal er een fout zijn
+        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Plant(emptyLocations.get(randomNumber), 1)); //one lifeforce
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+
+        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Carnivore(emptyLocations.get(randomNumber), 0));
+    }
 
 	public List<Location> getEmptyLocations() {
 
 
-		List<Location> opgevuldePlekken = new ArrayList<>();
+		List<Location> occupiedPlaces = new ArrayList<>();
 		for(Organism organism : grid){
-			opgevuldePlekken.add(organism.getLocation());
+			occupiedPlaces.add(organism.getLocation());
 		}
-		List<Location> legePlekken = new ArrayList<>();
+		List<Location> emptyPlaces = new ArrayList<>();
 		for(int i=0;i<=5;i++){
 			for(int j=0;j<=5;j++){
 				Location location = new Location(i, j);
-				if(!opgevuldePlekken.contains(location)){
-					legePlekken.add(location);
+				if(!emptyPlaces.contains(location)){
+					emptyPlaces.add(location);
 
 				}
 			}
 		}
-		return legePlekken;
+		return emptyPlaces;
 
 	}
 
 	public Terrarium(List<Organism> grid) {
 		super();
 		this.grid = grid;
+
+
 	}
 
-	public List<Organism> getAllOrganisms() {
+    public List<Organism> getAllOrganisms() {
 
-		List<Organism> alleOrganisms = new ArrayList<>();
+		List<Organism> allOrganisms = new ArrayList<>();
 
 		for(Organism organism : grid) {
 			if (organism instanceof Organism) {
-				alleOrganisms.add(organism);
+				allOrganisms.add(organism);
 			}
 		}
-		return alleOrganisms;
+		return allOrganisms;
 	}
 
 

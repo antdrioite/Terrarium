@@ -17,12 +17,6 @@ public class Terrarium {
 
 
 
-	//public Location getXemptyLocations() {
-	//	
-	//}
-
-
-
 	public Terrarium() {
 
         grid = new ArrayList<>(35);

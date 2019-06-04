@@ -8,7 +8,7 @@ public class Terrarium {
 	List<Organism> grid;
 
 	public void addOrganism(Organism organism) {
-		if (grid.size() <= 36){
+		if (grid.size() < 35) {
             if (!grid.contains(organism)) {
                 grid.add(organism);
             } else if (grid.contains(organism)) {

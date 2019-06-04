@@ -1,9 +1,13 @@
 package be.vdab.domain;
 
-public abstract class Animal extends Organism {
+import java.util.List;
 
-    public Animal(Location location, int lifeForce) {
+public abstract class Animal extends Organism {
+    private Terrarium terrarium;
+
+    public Animal(Location location, int lifeForce, Terrarium terrarium) {
         super(location, lifeForce);
+        this.terrarium = terrarium;
     }
 
     public boolean move() {
@@ -20,8 +24,15 @@ public abstract class Animal extends Organism {
         if (newY > 5) {
             newY = 0;
         }
-        this.setLocation(new Location(newX, newY));
-        return true;
+        Location newLocation = new Location(newX, newY);
+        List<Location> emptyLocations = terrarium.getEmptyLocations();
+        for (Location emptyLocation : emptyLocations) {
+            if (emptyLocation.equals(newLocation)) {
+                this.setLocation(newLocation);
+                return true;
+            }
+        }
+        return false;
     }
 
     public abstract boolean interactWithEnvironment();

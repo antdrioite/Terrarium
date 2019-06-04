@@ -20,8 +20,8 @@ public class Main {
 		System.out.println("druk v voor volgende dag, druk s om te stoppen");
 	    //vraag en check input aan de user
 		String input = scanner.nextLine();
-		while(input != "s") {
-			if (input == "v") {
+		while(!input.equals("s")) {
+			if (input.equals("v")) {
 				controller.spawnPlants();
 				controller.activateOrganisms();
 				controller.printTerrarium();

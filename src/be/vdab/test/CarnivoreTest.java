@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class CarnivoreTest {
 
     Terrarium terrarium = new Terrarium();
-    Carnivore carnivore = new Carnivore(new Location(1, 1), 0, terrarium);
+    Carnivore carnivore = new Carnivore(new Location(1, 1), 2, terrarium);
 
     @Before
     public void before(){
@@ -61,7 +61,7 @@ public class CarnivoreTest {
     }
 
     @Test
-    public void carnivoreTakesLikeForceOfHerbivore(){
+    public void carnivoreTakesLifeForceOfHerbivore(){
         Herbivore herbivore = new Herbivore(new Location(2, 1), 1, terrarium);
         terrarium.addOrganism(herbivore);
         int lifeForceBeforeMeal = carnivore.getLifeForce();
@@ -69,6 +69,44 @@ public class CarnivoreTest {
         int lifeForceAfterMeal = carnivore.getLifeForce();
         assertNotEquals(lifeForceBeforeMeal, lifeForceAfterMeal);
         assertEquals(lifeForceAfterMeal, lifeForceBeforeMeal +1);
+    }
+
+    @Test
+    public void carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce(){
+        Carnivore weakerCarnivore = new Carnivore(new Location(2, 1), 1, terrarium);
+        terrarium.addOrganism(weakerCarnivore);
+        int lifeForceBeforeFight = carnivore.getLifeForce();
+        int numOrganismsBeforeFight = terrarium.getAllOrganisms().size();
+        carnivore.interactWithEnvironment();
+        int lifeForceAfterFight = carnivore.getLifeForce();
+        int numOrganismsAFterFight = terrarium.getAllOrganisms().size();
+        assertEquals(lifeForceBeforeFight + 1, lifeForceAfterFight);
+        assertEquals(numOrganismsBeforeFight -1, numOrganismsAFterFight);
+    }
+    @Test
+    public void carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce(){
+        Carnivore strongerCarnivore = new Carnivore(new Location(2, 1), 3, terrarium);
+        terrarium.addOrganism(strongerCarnivore);
+        int lifeForceBeforeFight = strongerCarnivore.getLifeForce();
+        int numOrganismsBeforeFight = terrarium.getAllOrganisms().size();
+        carnivore.interactWithEnvironment();
+        int lifeForceAfterFight = strongerCarnivore.getLifeForce();
+        int numOrganismsAFterFight = terrarium.getAllOrganisms().size();
+        assertEquals(lifeForceBeforeFight + 2, lifeForceAfterFight);
+        assertEquals(numOrganismsBeforeFight -1, numOrganismsAFterFight);
+    }
+
+    @Test
+    public void carnivoresEvenlyMatchedDontFight(){
+        Carnivore evenlyMatchedCarnivore = new Carnivore(new Location(2, 1), 2, terrarium);
+        terrarium.addOrganism(evenlyMatchedCarnivore);
+        int lifeForceBeforeFight = carnivore.getLifeForce();
+        int numOrganismsBeforeFight = terrarium.getAllOrganisms().size();
+        carnivore.interactWithEnvironment();
+        int lifeForceAfterFight = carnivore.getLifeForce();
+        int numOrganismsAFterFight = terrarium.getAllOrganisms().size();
+        assertEquals(lifeForceBeforeFight, lifeForceAfterFight);
+        assertEquals(numOrganismsBeforeFight, numOrganismsAFterFight);
     }
 
     @Test(expected = IllegalArgumentException.class)

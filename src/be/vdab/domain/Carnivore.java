@@ -19,6 +19,19 @@ public class Carnivore extends Animal{
                     this.getTerrarium().remove(organism);
                     return true;
             }
+            else if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Carnivore.class)){
+                if(organism.getLifeForce() == this.getLifeForce()){
+                    //do nothing
+                }
+                else if(organism.getLifeForce() > this.getLifeForce()){
+                    organism.setLifeForce(organism.getLifeForce() + this.getLifeForce());
+                    this.getTerrarium().remove(this);
+                }
+                else if(organism.getLifeForce() < this.getLifeForce()){
+                    this.setLifeForce(organism.getLifeForce() + this.getLifeForce());
+                    this.getTerrarium().remove(organism);
+                }
+            }
         }
         return false;
     }

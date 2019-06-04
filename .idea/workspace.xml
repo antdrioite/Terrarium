@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/be/vdab/test/PlantTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="291">
+              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
                 <element signature="e#166#167#0" expanded="true" />
                 <element signature="e#219#220#0" expanded="true" />
@@ -39,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state relative-caret-position="172">
+              <caret line="101" column="16" selection-start-line="98" selection-end-line="110" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
@@ -64,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/test/PlantTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#394#395#0" expanded="true" />
@@ -129,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Organism.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
               <folding>
                 <element signature="e#348#349#0" expanded="true" />
                 <element signature="e#380#381#0" expanded="true" />
@@ -157,14 +158,14 @@
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Location.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/GameController.java" />
-        <option value="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/CarnivoreTest.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Animal.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Organism.java" />
-        <option value="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/PlantTest.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/test/PlantTest.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java" />
       </list>
     </option>
   </component>
@@ -253,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlantTest">
+  <component name="RunManager" selected="JUnit.CarnivoreTest">
     <configuration name="CarnivoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TerrariumScrum" />
       <extension name="coverage">
@@ -265,6 +266,54 @@
       <option name="PACKAGE_NAME" value="be.vdab.test" />
       <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarnivoreTest.carnivoresEvenlyMatchedDontFight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.vdab.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.CarnivoreTest" />
+      <option name="METHOD_NAME" value="carnivoresEvenlyMatchedDontFight" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -284,61 +333,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlantTest.plantCannotBeCreatedWithNegativeLifeForce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TerrariumScrum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.vdab.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.vdab.test" />
-      <option name="MAIN_CLASS_NAME" value="be.vdab.test.PlantTest" />
-      <option name="METHOD_NAME" value="plantCannotBeCreatedWithNegativeLifeForce" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlantTest.plantCannotBeCreatedWithNullLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TerrariumScrum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.vdab.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.vdab.test" />
-      <option name="MAIN_CLASS_NAME" value="be.vdab.test.PlantTest" />
-      <option name="METHOD_NAME" value="plantCannotBeCreatedWithNullLocation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlantTest.plantCannotBeSpawnedOnExistingLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TerrariumScrum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.vdab.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.vdab.test" />
-      <option name="MAIN_CLASS_NAME" value="be.vdab.test.PlantTest" />
-      <option name="METHOD_NAME" value="plantCannotBeSpawnedOnExistingLocation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlantTest" />
-        <item itemvalue="JUnit.PlantTest.plantCannotBeSpawnedOnExistingLocation" />
-        <item itemvalue="JUnit.PlantTest.plantCannotBeCreatedWithNegativeLifeForce" />
-        <item itemvalue="JUnit.PlantTest.plantCannotBeCreatedWithNullLocation" />
         <item itemvalue="JUnit.CarnivoreTest" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoresEvenlyMatchedDontFight" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" />
+        <item itemvalue="JUnit.CarnivoreTest.carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce" />
+        <item itemvalue="JUnit.PlantTest" />
       </list>
     </recent_temporary>
   </component>
@@ -370,28 +371,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559641745251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Plant Test">
+      <created>1559642443953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559642443953</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarnivoreTest_carnivoreCannotBeCreatedWithNegativeLifeForce - 2019.06.04 at 11h 45m 40s.xml">
-      <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNegativeLifeForce" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest_carnivoreCannotBeCreatedWithNullTerrarium - 2019.06.04 at 11h 46m 06s.xml">
-      <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNullTerrarium" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest_carnivoreCannotBeCreatedWithNullTerrarium - 2019.06.04 at 11h 46m 21s.xml">
-      <configuration name="CarnivoreTest.carnivoreCannotBeCreatedWithNullTerrarium" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest_carnivoreTakesLikeForceOfHerbivore - 2019.06.04 at 11h 48m 16s.xml">
-      <configuration name="CarnivoreTest.carnivoreTakesLikeForceOfHerbivore" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CarnivoreTest - 2019.06.04 at 11h 48m 22s.xml">
-      <configuration name="CarnivoreTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlantTest_plantCannotBeCreatedWithNullLocation - 2019.06.04 at 11h 56m 36s.xml">
-      <configuration name="PlantTest.plantCannotBeCreatedWithNullLocation" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PlantTest_plantCannotBeCreatedWithNullLocation - 2019.06.04 at 11h 56m 37s.xml">
       <configuration name="PlantTest.plantCannotBeCreatedWithNullLocation" configurationId="JUnit" />
     </history-entry>
@@ -404,9 +394,27 @@
     <history-entry file="PlantTest_plantCannotBeSpawnedOnExistingLocation - 2019.06.04 at 11h 58m 46s.xml">
       <configuration name="PlantTest.plantCannotBeSpawnedOnExistingLocation" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PlantTest - 2019.06.04 at 12h 00m 28s.xml">
+      <configuration name="PlantTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest - 2019.06.04 at 12h 07m 19s.xml">
+      <configuration name="CarnivoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce - 2019.06.04 at 12h 09m 25s.xml">
+      <configuration name="CarnivoreTest.carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce - 2019.06.04 at 12h 10m 19s.xml">
+      <configuration name="CarnivoreTest.carnivoreDefeatsWeakerCarnivoresToTheRightAndTakesTheirLifeForce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce - 2019.06.04 at 12h 11m 31s.xml">
+      <configuration name="CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CarnivoreTest_carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce - 2019.06.04 at 12h 11m 56s.xml">
+      <configuration name="CarnivoreTest.carnivoreIsDefeatedByStrongerCarnivoresToTheRightTheyTakeItsLifeForce" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3955000" />
+    <option name="totallyTimeSpent" value="4734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -417,7 +425,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16912752" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16912752" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -439,7 +447,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Run" order="8" visible="true" weight="0.32885906" />
+      <window_info active="true" anchor="right" id="Run" order="8" visible="true" weight="0.14563759" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -482,7 +490,8 @@
     <MESSAGE value="xml Commit" />
     <MESSAGE value="Carnivores moving and eating" />
     <MESSAGE value="Carnivore Test (including changes to Organism and Animal so no null or negative values are allowed in constructor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carnivore Test (including changes to Organism and Animal so no null or negative values are allowed in constructor)" />
+    <MESSAGE value="Plant Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plant Test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/be/vdab/Main.java">
@@ -537,48 +546,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding>
             <element signature="e#1426#1427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Organism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2326#2327#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -592,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/test/PlantTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#394#395#0" expanded="true" />
@@ -602,6 +575,42 @@
             <element signature="e#464#465#0" expanded="true" />
             <element signature="e#604#605#0" expanded="true" />
             <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Organism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Carnivore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/CarnivoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="101" column="16" selection-start-line="98" selection-end-line="110" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="e#2326#2327#0" expanded="true" />
           </folding>
         </state>
       </provider>

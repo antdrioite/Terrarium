@@ -17,11 +17,12 @@ public class GameController {
         terrarium.addOrganism(plant);
     }
     public void activateOrganisms(){
-        //then let Carnivores interact with environment
+        //let Carnivores interact with environment
         for(Organism organism : terrarium.getAllOrganisms()){
             if(organism instanceof Carnivore){
                 Carnivore carnivore = (Carnivore) organism;
                 boolean hasInteracted = carnivore.interactWithEnvironment();
+                //if no interaction let them move
                 if(!hasInteracted){
                     carnivore.move();
                 }
@@ -32,6 +33,7 @@ public class GameController {
             if(organism instanceof Herbivore){
                 Herbivore herbivore = (Herbivore) organism;
                 boolean hasInteracted = herbivore.interactWithEnvironment();
+                //if no interaction let them move
                 if(!hasInteracted){
                     herbivore.move();
                 }
@@ -40,9 +42,14 @@ public class GameController {
     }
     public void printTerrarium(){
         //not very efficient but temporary, size of Terrarium should be variable
+        System.out.println(" - - - - - - - - - - - - - - ");
         for(int y=0;y<=5;y++){
+            System.out.print("|\t");
             for(int x=0;x<=5;x++){
+
+                //create new Location for every point on grid
                 Location location = new Location(x, y);
+                //check if there's an organism on this location and what kind
                 boolean organismFound = false;
                 for(Organism organism : terrarium.getAllOrganisms()){
                     if(organism.getLocation().equals(location)){
@@ -58,11 +65,14 @@ public class GameController {
                         }
                     }
                 }
+                //if not print "."
                 if(!organismFound){
                     System.out.print(".\t");
                 }
             }
+            System.out.print("|");
             System.out.println();
         }
+        System.out.println(" - - - - - - - - - - - - - -");
     }
 }

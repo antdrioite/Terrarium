@@ -22,7 +22,7 @@ public class GameControllerTest {
 
     @Test
     public void activateOrganisms() {
-        controller.spawnPlants();
+//        controller.spawnPlants();
     }
 
     @Test

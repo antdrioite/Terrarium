@@ -17,11 +17,13 @@ public class Carnivore extends Animal{
             toTheRight.setX(0);
         }
         for(Organism organism : organisms){
+            //eating
             if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Herbivore.class)){
                     this.setLifeForce(this.getLifeForce() + organism.getLifeForce());
                     this.getTerrarium().remove(organism);
                     return true;
             }
+            //fighting
             else if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Carnivore.class)){
                 if(organism.getLifeForce() == this.getLifeForce()){
                     //do nothing
@@ -34,6 +36,7 @@ public class Carnivore extends Animal{
                     this.setLifeForce(organism.getLifeForce() + this.getLifeForce());
                     this.getTerrarium().remove(organism);
                 }
+                return true;
             }
         }
         return false;

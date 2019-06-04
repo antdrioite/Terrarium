@@ -8,8 +8,11 @@ public class Terrarium {
 	List<Organism> grid;
 
 	public void addOrganism(Organism organism) {
-		grid.add(organism);
-
+		if (grid.size() <= 36){
+			grid.add(organism);
+		} else {
+			throw new IllegalArgumentException(" de index is meer dan 36 ");
+		}
 	}
 
 
@@ -22,7 +25,8 @@ public class Terrarium {
 
 	public Terrarium() {
 
-        grid = new ArrayList<>();
+        grid = new ArrayList<>(35);
+		//minimum capcity max capacity kan je niet instellen
 
 
         List<Location> emptyLocations;
@@ -33,20 +37,22 @@ public class Terrarium {
         grid.add(new Plant(emptyLocations.get(randomNumber), 1)); //one lifeforce
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Carnivore(emptyLocations.get(randomNumber), 0));
+        grid.add(new Carnivore(emptyLocations.get(randomNumber), 0, this));
     }
+
+    //grid heeft een fixed grote nodig nu
 
 	public List<Location> getEmptyLocations() {
 
@@ -88,6 +94,9 @@ public class Terrarium {
 		return allOrganisms;
 	}
 
+	public void remove(Organism organism){
+		grid.remove(organism);
+	}
 
 
 

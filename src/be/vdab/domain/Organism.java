@@ -16,4 +16,8 @@ public abstract class Organism {
     public int getLifeForce() {
         return lifeForce;
     }
+
+    public void setLifeForce(int lifeForce) {
+        this.lifeForce = lifeForce;
+    }
 }

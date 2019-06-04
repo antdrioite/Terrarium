@@ -1,0 +1,22 @@
+Dit moet allemaal werken:
+-Random plant elke dag:
+-Herbivoor kan plant eten en krijgt 1 lifeforce bij:
+-Herbivoor vrijt met Herbivoor en dit zorgt voor een random herbivoor:
+-Animals bewegen 1 plaats at random als er niemand geen organisme rechts van hen staat:
+-carnivoor eet herbivoor rechts en krijgt de lifeforce van de herbivoor erbij:
+-Carnivoor vecht met carnivoor rechts, vergelijk lifeforce grootste lifefore wint en neemt andere lifeforce over. verliezer verdwijnt
+-Terrarium is 6 op 6 dus print moet die grootte zijn en locaties ook maar zo groot, moet makkelijk aanpasbaar zijn
+-Terrarium random gevuld met een bepaald aantal organismen
+-Matrix bestaat uit H,P,C of een punt:
+-user input: v voor nieuwe dag, s om programma te stoppen
+
+-zorgen dat dieren door de matrix bewegen van een einde naar het andere einde
+
+eventuele extra's:
+-animals kunnen ook naar andere kanten kijken en interacten/ carnivoren kunnen planten vertrappen/ herbivoren lopen weg van carnivoren rechts
+-als een herbivoor geboren is kan die niet meteen interacten?? moet een dag rusten om lifeforce op 1 te brengen
+-user kan zelf bepalen hoeveel animals en planten er spawnen bij start van terrarium:
+-user kan zelf grote matrix instellen
+-carnivoren kunnen vrijen met elkaar (door geslacht toe te voegen bij carnivoor, zelfde geslacht vecht, ander geslacht vrijt)
+
+

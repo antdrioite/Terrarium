@@ -9,13 +9,23 @@ public class Terrarium {
 
 	public void addOrganism(Organism organism) {
 		if (grid.size() <= 36){
-			grid.add(organism);
+            if (!grid.contains(organism)) {
+                grid.add(organism);
+            } else if (grid.contains(organism)) {
+                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig ");
+            }
+
 		} else {
 			throw new IllegalArgumentException(" de index is meer dan 36 ");
 		}
 	}
 
-
+    public void addNewHerbivore() {
+        List<Location> emptyLocations;
+        emptyLocations = this.getEmptyLocations();
+        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        grid.add(new Herbivore(emptyLocations.get(randomNumber), 1, this));
+    }
 
 	public Terrarium() {
 
@@ -89,7 +99,8 @@ public class Terrarium {
 	}
 
 	public void remove(Organism organism){
-		grid.remove(organism);
+
+        grid.remove(organism);
 	}
 
 

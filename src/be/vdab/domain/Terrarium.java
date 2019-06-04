@@ -31,11 +31,11 @@ public class Terrarium {
 		Location zes = new Location(3,1);
 
 		grid.add(new Plant(twee, 1));
-		grid.add(new Herbivore(een, 0));
-		grid.add(new Herbivore(drie, 0));
-		grid.add(new Herbivore(vier, 0));
-		grid.add(new Herbivore(zes, 0));
-		grid.add(new Carnivore(this, vijf, 0));
+		grid.add(new Herbivore(een, 0, this));
+		grid.add(new Herbivore(drie, 0, this));
+		grid.add(new Herbivore(vier, 0, this));
+		grid.add(new Herbivore(zes, 0, this));
+		grid.add(new Carnivore( this, vijf, 0));
 
 	}
 

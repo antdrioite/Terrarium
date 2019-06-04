@@ -13,6 +13,9 @@ public class Carnivore extends Animal{
     public boolean interactWithEnvironment() {
         List<Organism> organisms = this.getTerrarium().getAllOrganisms();
         Location toTheRight = new Location(getLocation().getX() +1, getLocation().getY());
+        if(toTheRight.getX() > 5){
+            toTheRight.setX(0);
+        }
         for(Organism organism : organisms){
             if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Herbivore.class)){
                     this.setLifeForce(this.getLifeForce() + organism.getLifeForce());

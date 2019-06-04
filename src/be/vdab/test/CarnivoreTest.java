@@ -17,7 +17,7 @@ public class CarnivoreTest {
     }
 
     @Test
-    public void carnivoreOnlyEatsHerbivoresToTheRight(){
+    public void carnivoreEatsHerbivoresToTheRight(){
         Herbivore herbivore = new Herbivore(new Location(2, 1), 1, terrarium);
         terrarium.addOrganism(herbivore);
         int numOrganismsBeforeMeal = terrarium.getAllOrganisms().size();
@@ -107,6 +107,27 @@ public class CarnivoreTest {
         int numOrganismsAFterFight = terrarium.getAllOrganisms().size();
         assertEquals(lifeForceBeforeFight, lifeForceAfterFight);
         assertEquals(numOrganismsBeforeFight, numOrganismsAFterFight);
+    }
+
+    @Test
+    public void carnivoresOnLastColumnInteractWithOrganismsOnFirstColumn(){
+        Carnivore carnivoreOnLastColumn = new Carnivore(new Location(5, 0), 2, terrarium);
+        Herbivore herbivore = new Herbivore(new Location(0, 0), 1, terrarium);
+        terrarium.addOrganism(carnivoreOnLastColumn);
+        terrarium.addOrganism(herbivore);
+        int numOrganismsBeforeMeal = terrarium.getAllOrganisms().size();
+        carnivoreOnLastColumn.interactWithEnvironment();
+        int numOrganismsAfterMeal = terrarium.getAllOrganisms().size();
+        assertEquals(numOrganismsBeforeMeal -1, numOrganismsAfterMeal);
+
+        Carnivore carnivoreOnFirstColumn = new Carnivore(new Location(0,0), 1, terrarium );
+        terrarium.addOrganism(carnivoreOnFirstColumn);
+        int numOrganismsBeforeFight = terrarium.getAllOrganisms().size();
+        carnivoreOnLastColumn.interactWithEnvironment();
+        int numOrganismsAfterFight = terrarium.getAllOrganisms().size();
+        assertEquals(numOrganismsBeforeFight -1, numOrganismsAfterFight);
+
+
     }
 
     @Test(expected = IllegalArgumentException.class)

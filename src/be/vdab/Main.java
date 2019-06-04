@@ -13,16 +13,16 @@ public class Main {
 
 		System.out.println("Welkom bij Terrarium. Zo begint jouw terrarium:");
 
-        //maak een terrarium en gamecontroller object
-	    Terrarium terrarium = new Terrarium();
-	    GameController controller = new GameController(terrarium);
-	    //print dag 1
-	    controller.printTerrarium();
+		//maak een terrarium en gamecontroller object
+		Terrarium terrarium = new Terrarium();
+		GameController controller = new GameController(terrarium);
+		//print dag 1
+		controller.printTerrarium();
 		System.out.println("druk v voor volgende dag, druk s om te stoppen");
-	    //vraag en check input aan de user
+		//vraag en check input aan de user
 		String input = scanner.nextLine();
-		while(input != "s") {
-			if (input == "v") {
+		while(!input.equals("s")) {
+			if (input.equals("v")) {
 				controller.spawnPlants();
 				controller.activateOrganisms();
 				controller.printTerrarium();
@@ -33,5 +33,5 @@ public class Main {
 			System.out.println("druk v voor volgende dag, druk s om te stoppen");
 			input = scanner.nextLine();
 		}
-    }
+	}
 }

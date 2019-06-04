@@ -8,6 +8,7 @@ public class Carnivore extends Animal{
 
     @Override
     public boolean interactWithEnvironment() {
-        return true;
+        Location neighbourLocation = new Location(this.getLocation().getX()+1,this.getLocation().getY());
+        Organism neighbour = 
     }
 }

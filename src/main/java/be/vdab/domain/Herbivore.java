@@ -18,17 +18,16 @@ public class Herbivore extends Animal {
                 neighbourOrganism = organism;
             }
         }
-        if (neighbourOrganism.getClass().equals(Plant.class)) {
-            this.setLifeForce(this.getLifeForce() + neighbourOrganism.getLifeForce());
-            this.getTerrarium().remove(neighbourOrganism);
-            return true;
+        if (neighbourOrganism == null) {
+            return this.move();
         } else if (neighbourOrganism.getClass().equals(Herbivore.class)) {
             System.out.println("Love is in the air!");
             this.getTerrarium().addNewHerbivore(); // Moet dit geen Boolean worden?
             return true;
-        } else if (neighbourOrganism == null) {
-            System.out.println("Moved.");
-            return this.move();
+        } else if (neighbourOrganism.getClass().equals(Plant.class)) {
+            this.setLifeForce(this.getLifeForce() + neighbourOrganism.getLifeForce());
+            this.getTerrarium().remove(neighbourOrganism);
+            return true;
         } else {
             System.out.println("Something wrong.");
             return false;

@@ -10,12 +10,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PlantTest {
-    Terrarium terrarium = new Terrarium();
     Plant plant = new Plant(new Location(2,2), 1);
 
     @Before
     public void before(){
-        terrarium.addOrganism(plant);
+        Terrarium.INSTANCE.addOrganism(plant);
     }
 
 

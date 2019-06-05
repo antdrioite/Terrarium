@@ -3,8 +3,9 @@ package be.vdab.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Terrarium {
+public enum Terrarium {
 
+	INSTANCE;
 	List<Organism> grid;
 
 	public void addOrganism(Organism organism) {
@@ -20,7 +21,7 @@ public class Terrarium {
 
 
 
-	public Terrarium() {
+	Terrarium() {
 
 		grid = new ArrayList<>();
 		Location een = new Location(4,0);
@@ -62,8 +63,7 @@ public class Terrarium {
 
 	}
 
-	public Terrarium(List<Organism> grid) {
-		super();
+	Terrarium(List<Organism> grid) {
 		this.grid = grid;
 	}
 

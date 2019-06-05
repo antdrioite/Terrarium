@@ -9,26 +9,25 @@ import static org.junit.Assert.assertTrue;
 
 public class GameControllerTest {
 
-    Terrarium terrarium = new Terrarium();
-    GameController controller = new GameController(terrarium);
+    GameController controller = GameController.INSTANCE;
 
     @Test
     public void spawnPlants() {
-        int sizeBefore = terrarium.getAllOrganisms().size();
+        int sizeBefore = Terrarium.INSTANCE.getAllOrganisms().size();
         controller.spawnPlants();
-        int sizeAfter = terrarium.getAllOrganisms().size();
+        int sizeAfter = Terrarium.INSTANCE.getAllOrganisms().size();
         assertEquals(sizeBefore +1, sizeAfter);
     }
 
     @Test
     public void organismsAreActivated() {
-        for(Organism organism : terrarium.getAllOrganisms()){
-            terrarium.remove(organism);
+        for(Organism organism : Terrarium.INSTANCE.getAllOrganisms()){
+            Terrarium.INSTANCE.remove(organism);
         }
-        terrarium.addOrganism(new Carnivore(new Location(0,0) ,1, terrarium));
-        terrarium.addOrganism(new Herbivore(new Location(1,0) ,1, terrarium));
+        Terrarium.INSTANCE.addOrganism(new Carnivore(new Location(0,0) ,1, Terrarium.INSTANCE));
+        Terrarium.INSTANCE.addOrganism(new Herbivore(new Location(1,0) ,1, Terrarium.INSTANCE));
         controller.activateOrganisms();
-        assertEquals(1, terrarium.getAllOrganisms().size());
+        assertEquals(1, Terrarium.INSTANCE.getAllOrganisms().size());
     }
 
     @Test

@@ -2,32 +2,29 @@ package be.vdab.domain;
 
 import java.util.List;
 
-public class GameController {
+public enum GameController {
 
-    Terrarium terrarium;
+    INSTANCE;
 
-    public GameController(Terrarium terrarium) {
-        this.terrarium = terrarium;
-    }
 
     public void spawnPlants(){
-        List<Location> emptyLocations = terrarium.getEmptyLocations();
+        List<Location> emptyLocations = Terrarium.INSTANCE.getEmptyLocations();
         if (emptyLocations.size() > 0) {
             int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size())-1;
             Plant plant = new Plant(emptyLocations.get(randomNumber), 1); //one lifeforce
-            terrarium.addOrganism(plant);
+            Terrarium.INSTANCE.addOrganism(plant);
         }
 
     }
     public void activateOrganisms(){
         //let Carnivores interact with environment
-        for(Organism organism : terrarium.getAllOrganisms()){
+        for(Organism organism : Terrarium.INSTANCE.getAllOrganisms()){
             if(organism instanceof Carnivore){
                 ((Carnivore) organism).interactWithEnvironment();
             }
         }
         //then let Herbivores interact with environment
-        for(Organism organism : terrarium.getAllOrganisms()){
+        for(Organism organism : Terrarium.INSTANCE.getAllOrganisms()){
             if(organism instanceof Herbivore){
                 ((Herbivore) organism).interactWithEnvironment();
             }
@@ -44,7 +41,7 @@ public class GameController {
                 Location location = new Location(x, y);
                 //check if there's an organism on this location and what kind
                 boolean organismFound = false;
-                for(Organism organism : terrarium.getAllOrganisms()){
+                for(Organism organism : Terrarium.INSTANCE.getAllOrganisms()){
                     if(organism.getLocation().equals(location)){
                         organismFound = true;
                         if(organism instanceof Plant){

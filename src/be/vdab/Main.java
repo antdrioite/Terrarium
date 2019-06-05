@@ -14,8 +14,7 @@ public class Main {
 		System.out.println("Welkom bij Terrarium. Zo begint jouw terrarium:");
 
 		//maak een terrarium en gamecontroller object
-		Terrarium terrarium = new Terrarium();
-		GameController controller = new GameController(terrarium);
+		GameController controller = GameController.INSTANCE;
 		//print dag 1
 		controller.printTerrarium();
 		System.out.println("druk v voor volgende dag, druk s om te stoppen");

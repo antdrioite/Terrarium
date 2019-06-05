@@ -30,7 +30,7 @@ public class Terrarium {
     public void addNewHerbivore() {
         List<Location> emptyLocations;
         emptyLocations = this.getEmptyLocations();
-        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        int randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 1, this));
     }
 
@@ -44,22 +44,22 @@ public class Terrarium {
         emptyLocations = this.getEmptyLocations();
 
         //in het geval dat het randomnummer hetzelfde is, zal er een fout zijn
-        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        int randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Plant(emptyLocations.get(randomNumber), 1)); //one lifeforce
 
-        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
         grid.add(new Carnivore(emptyLocations.get(randomNumber), 0, this));
     }
 

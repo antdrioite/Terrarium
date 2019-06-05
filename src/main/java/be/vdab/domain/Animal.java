@@ -26,9 +26,11 @@ public abstract class Animal extends Organism {
             if (newX > 5) {
                 newX = 0;
             }
+            if (newX < 0) newX = 5;
             if (newY > 5) {
                 newY = 0;
             }
+            if (newY < 0) new Y=5;
             Location newLocation = new Location(newX, newY);
             List<Location> emptyLocations = terrarium.getEmptyLocations();
             for (Location emptyLocation : emptyLocations) {

@@ -25,7 +25,7 @@ public class Herbivore extends Animal {
                 return true;
             case neighbourOrganism.getClass().equals(Herbivore.class):
                 System.out.println("Love is in the air!");
-                Terrarium.addNewHerbivore;
+                Terrarium.addNewHerbivore();
                 return true;
             case neighbourOrganism == null:
                 return this.move();

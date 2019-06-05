@@ -1,0 +1,96 @@
+package be.vdab.test;
+
+import be.vdab.domain.Terrarium;
+import be.vdab.domain.Organism;
+import be.vdab.domain.Herbivore;
+import be.vdab.domain.Plant;
+import be.vdab.domain.Location;
+import be.vdab.test.repositories.HerbivoreRepository;
+import be.vdab.test.repositories.HerbivoreRepositoryStub;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.*;
+
+public class TerrariumTest {
+
+    private Terrarium testPlace;
+    private HerbivoreRepository herbivoreTest;
+
+
+    @Before
+    public void before() {
+        testPlace = new Terrarium();
+        herbivoreTest = new HerbivoreRepositoryStub();
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void add2OrganismToTheSameLocation() {
+
+        int x, y;
+        x = 5;
+        y = 2;
+        Location testLocation = new Location(x, y);
+
+        Herbivore three = new Herbivore(testLocation, 6, testPlace);
+        Plant one = new Plant(testLocation, 4);
+        Plant two = new Plant(testLocation, 5);
+        testPlace.addOrganism(two);
+        testPlace.addOrganism(one);
+        testPlace.addOrganism(three);
+
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void addOrganismOutOfBound() {
+        int x, y;
+        x = 35;
+        y = 45;
+        Location outOfBoundLocation = new Location(x, y);
+        Plant one = new Plant(outOfBoundLocation, 1);
+        testPlace.addOrganism(one);
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void AddOrganismOnNegativeLocation() {
+        int x, y;
+        x = -5;
+        y = -5;
+        Location negativeLocation = new Location(x, y);
+        Plant one = new Plant(negativeLocation, 1);
+        testPlace.addOrganism(one);
+
+    }
+
+    @Test
+    public void ADDHerbvioreTest() {
+        testPlace.addNewHerbivore();
+
+    }
+
+    @Test
+    public void emptyTerrarium() {
+        assertTrue(this.makeTerrariumEmpty());
+    }
+
+    public boolean makeTerrariumEmpty() {
+        List<Organism> allOrganisms = new ArrayList<>();
+        boolean isEmpty = true;
+        allOrganisms = testPlace.getAllOrganisms();
+
+        for (Organism all : allOrganisms) {
+            if (all != null) {
+                testPlace.remove(all);
+            }
+        }
+        isEmpty = true;
+        return isEmpty;
+    }
+
+

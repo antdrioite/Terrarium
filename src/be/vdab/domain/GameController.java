@@ -20,23 +20,13 @@ public class GameController {
         //let Carnivores interact with environment
         for(Organism organism : terrarium.getAllOrganisms()){
             if(organism instanceof Carnivore){
-                Carnivore carnivore = (Carnivore) organism;
-                boolean hasInteracted = carnivore.interactWithEnvironment();
-                //if no interaction let them move
-                if(!hasInteracted){
-                    carnivore.move();
-                }
+                ((Carnivore) organism).interactWithEnvironment();
             }
         }
         //then let Herbivores interact with environment
         for(Organism organism : terrarium.getAllOrganisms()){
             if(organism instanceof Herbivore){
-                Herbivore herbivore = (Herbivore) organism;
-                boolean hasInteracted = herbivore.interactWithEnvironment();
-                //if no interaction let them move
-                if(!hasInteracted){
-                    herbivore.move();
-                }
+                ((Herbivore) organism).interactWithEnvironment();
             }
         }
     }

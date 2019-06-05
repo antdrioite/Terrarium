@@ -1,11 +1,11 @@
 package be.vdab.test;
 
 
-import be.vdab.domain.GameController;
-import be.vdab.domain.Terrarium;
+import be.vdab.domain.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class GameControllerTest {
 
@@ -21,8 +21,14 @@ public class GameControllerTest {
     }
 
     @Test
-    public void activateOrganisms() {
-//        controller.spawnPlants();
+    public void organismsAreActivated() {
+        for(Organism organism : terrarium.getAllOrganisms()){
+            terrarium.remove(organism);
+        }
+        terrarium.addOrganism(new Carnivore(new Location(0,0) ,1, terrarium));
+        terrarium.addOrganism(new Herbivore(new Location(1,0) ,1, terrarium));
+        controller.activateOrganisms();
+        assertEquals(1, terrarium.getAllOrganisms().size());
     }
 
     @Test

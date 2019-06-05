@@ -16,25 +16,27 @@ public class Carnivore extends Animal{
         if(toTheRight.getX() > 5){
             toTheRight.setX(0);
         }
+        boolean hasInteracted = false;
         for(Organism organism : organisms){
             //check if there's an organism to the right
             if(organism.getLocation().equals(toTheRight)){
                 //eat it if Herbivore
                 if(organism.getClass().equals(Herbivore.class)){
                     eat((Herbivore) organism);
+                    hasInteracted = true;
                 }
                 //fight it if Carnivore
                 else if(organism.getClass().equals(Carnivore.class)){
                     fight((Carnivore) organism);
+                    hasInteracted = true;
                 }
-                //moves if plant to the right
-                else if(organism.getClass().equals(Plant.class)){
-                    return false;
-                }
-                return true;
             }
         }
-        return false;
+        if(!hasInteracted){
+            this.move();
+            return false;
+        }
+        return true;
     }
 
 

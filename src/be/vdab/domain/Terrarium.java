@@ -3,6 +3,7 @@ package be.vdab.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Terrarium {
 
 	List<Organism> grid;
@@ -12,18 +13,23 @@ public class Terrarium {
 		//Location occupiedLocation = new Location(organism.getLocation().getX(), organism.getLocation().getY());
 
 
-		if (grid.size() < 35) {
+        if (grid.size() < 36) {
 			if (!grid.contains(organism)) {
-				grid.add(organism);
+
+                if ((organism.getLocation().getX() > 0) && (organism.getLocation().getY() > 0)) {
+                    grid.add(organism);
+                } else {
+					throws new IllegalArgumentException(" De location is negatief");
+                }
 
 			} else if (!this.getEmptyLocations().contains(organism.getLocation())) {
-				throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
+				throws new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
 			}
 
 
             } else if (grid.contains(organism)) {
 
-			throw new IllegalArgumentException(" de index is meer dan 36 ");
+			throws new IllegalArgumentException(" de index is meer dan 36 ");
 		}
 	}
 
@@ -36,7 +42,7 @@ public class Terrarium {
 
 	public Terrarium() {
 
-        grid = new ArrayList<>(35);
+        grid = new ArrayList<>(36);
 		//minimum capcity max capacity kan je niet instellen
 
 
@@ -44,19 +50,19 @@ public class Terrarium {
         emptyLocations = this.getEmptyLocations();
 
         //in het geval dat het randomnummer hetzelfde is, zal er een fout zijn
-        int randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
+        int randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size() - 1);
         grid.add(new Plant(emptyLocations.get(randomNumber), 1)); //one lifeforce
 
-        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size() - 1);
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size() - 1);
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size() - 1);
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
-        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
+        randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size() - 1);
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());

@@ -43,7 +43,7 @@ public class TerrariumTest {
 
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void addOrganismOutOfBound() {
         int x, y;
         x = 35;
@@ -51,7 +51,19 @@ public class TerrariumTest {
         Location outOfBoundLocation = new Location(x, y);
 
         Plant one = new Plant(outOfBoundLocation, 1);
+        //zou een fout moeten geven
+        testPlek.addOrganism(one);
 
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void AddOrganismOnNegativeLocation() {
+        int x, y;
+        x = -5;
+        y = -5;
+        Location negativeLocation = new Location(x, y);
+        Plant one = new Plant(negativeLocation, 1);
+        testPlek.addOrganism(one);
 
     }
 

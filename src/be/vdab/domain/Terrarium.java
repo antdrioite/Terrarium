@@ -8,6 +8,9 @@ public class Terrarium {
 
 	List<Organism> grid;
 
+    private int terrariumSize = 36;
+    private int terrariumXBound = 5;
+    private int terrariumYBound = 5;
 
 	public void addOrganism(Organism organism) {
 		//Location occupiedLocation = new Location(organism.getLocation().getX(), organism.getLocation().getY());
@@ -15,7 +18,7 @@ public class Terrarium {
         if (!this.getEmptyLocations().contains(organism.getLocation())) {
             throw new IllegalArgumentException();
         }
-        if (grid.size() < 36) {
+        if (grid.size() < terrariumSize) {
 			if (!grid.contains(organism)) {
 
                 if ((organism.getLocation().getX() > 0) && (organism.getLocation().getY() > 0)) {
@@ -24,8 +27,6 @@ public class Terrarium {
                     throw new IllegalArgumentException(" De location is negatief");
                 }
 
-//			} else if (!this.getEmptyLocations().contains(organism.getLocation())) {
-//                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
             }
 
 
@@ -81,8 +82,8 @@ public class Terrarium {
 			occupiedPlaces.add(organism.getLocation());
 		}
 		List<Location> emptyPlaces = new ArrayList<>();
-		for(int i=0;i<=5;i++){
-			for(int j=0;j<=5;j++){
+        for (int i = 0; i <= terrariumXBound; i++) {
+            for (int j = 0; j <= terrariumYBound; j++) {
 				Location location = new Location(i, j);
                 if (!occupiedPlaces.contains(location)) {
 					emptyPlaces.add(location);
@@ -119,9 +120,27 @@ public class Terrarium {
 	}
 
 
+    public int getTerrariumSize() {
+        return terrariumSize;
+    }
 
+    public void setTerrariumSize(int terrariumSize) {
+        this.terrariumSize = terrariumSize;
+    }
 
+    public int getTerrariumXBound() {
+        return terrariumXBound;
+    }
 
+    public void setTerrariumXBound(int terrariumXBound) {
+        this.terrariumXBound = terrariumXBound;
+    }
 
+    public int getTerrariumYBound() {
+        return terrariumYBound;
+    }
 
+    public void setTerrariumYBound(int terrariumYBound) {
+        this.terrariumYBound = terrariumYBound;
+    }
 }

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="playing field in terrarium fixed&#10;no longer extends">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,7 +245,7 @@
       <workItem from="1559577933821" duration="46000" />
       <workItem from="1559577993988" duration="5000" />
       <workItem from="1559720133844" duration="217000" />
-      <workItem from="1559720392402" duration="2988000" />
+      <workItem from="1559720392402" duration="3232000" />
     </task>
     <task id="LOCAL-00001" summary="TerariumTest&#10;testing add 2 organism to the same place">
       <created>1559653472418</created>
@@ -278,11 +275,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559723277779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="just new commit">
+      <created>1559723437429</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559723437429</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit of modified files before merge">
+      <created>1559723557371</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559723557371</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17486000" />
+    <option name="totallyTimeSpent" value="17730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +388,9 @@
     <MESSAGE value="playing field in terrarium fixed&#10;no longer extends" />
     <MESSAGE value="test adding organism out of bounds(35,45)&#10;test adding 2 organism on same location" />
     <MESSAGE value="Always checks again for most Recent empty Locations List&#10;No more two organism can spawn on the same place" />
-    <option name="LAST_COMMIT_MESSAGE" value="Always checks again for most Recent empty Locations List&#10;No more two organism can spawn on the same place" />
+    <MESSAGE value="just new commit" />
+    <MESSAGE value="commit of modified files before merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit of modified files before merge" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -474,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

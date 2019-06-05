@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="">
+    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="Herbivore interactWithEnvironment method update">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,11 +32,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="782">
+              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
                 <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
                 <element signature="e#1466#1467#0" expanded="true" />
               </folding>
             </state>
@@ -45,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="238">
               <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding>
                 <element signature="e#166#167#0" expanded="true" />
@@ -149,6 +152,32 @@
             <path>
               <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
               <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="TerrariumScrum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="TerrariumScrum" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,6 +199,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="vdab" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -293,7 +326,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17730000" />
+    <option name="totallyTimeSpent" value="17813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,7 +497,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="238">
           <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
           <folding>
             <element signature="e#166#167#0" expanded="true" />
@@ -475,11 +508,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        <state relative-caret-position="782">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
             <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
             <element signature="e#1466#1467#0" expanded="true" />
           </folding>
         </state>
@@ -488,7 +523,7 @@
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

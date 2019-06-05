@@ -11,7 +11,7 @@ public class Carnivore extends Animal{
 
     @Override
     public boolean interactWithEnvironment() {
-        List<Organism> organisms = this.getTerrarium().getAllOrganisms();
+        /*List<Organism> organisms = this.getTerrarium().getAllOrganisms();
         Location toTheRight = new Location(getLocation().getX() +1, getLocation().getY());
         for(Organism organism : organisms){
             if(organism.getLocation().equals(toTheRight) && organism.getClass().equals(Herbivore.class)){
@@ -19,7 +19,7 @@ public class Carnivore extends Animal{
                     this.getTerrarium().remove(organism);
                     return true;
             }
-        }
+        }*/
         return false;
     }
 }

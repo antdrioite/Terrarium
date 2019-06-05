@@ -38,22 +38,22 @@ public class Terrarium {
 
         //in het geval dat het randomnummer hetzelfde is, zal er een fout zijn
         int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Plant(emptyLocations.get(randomNumber), 1)); //one lifeforce
+        grid.add(new Plant(emptyLocations.get(randomNumber-1), 1)); //one lifeforce
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber-1), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber-1), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber-1), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Herbivore(emptyLocations.get(randomNumber), 0, this));
+        grid.add(new Herbivore(emptyLocations.get(randomNumber-1), 0, this));
 
         randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        grid.add(new Carnivore(emptyLocations.get(randomNumber), 0, this));
+        grid.add(new Carnivore(emptyLocations.get(randomNumber-1), 0, this));
     }
 
     //grid heeft een fixed grote nodig nu
@@ -69,7 +69,7 @@ public class Terrarium {
 		for(int i=0;i<=5;i++){
 			for(int j=0;j<=5;j++){
 				Location location = new Location(i, j);
-				if(!emptyPlaces.contains(location)){
+				if(!occupiedPlaces.contains(location)){
 					emptyPlaces.add(location);
 
 				}

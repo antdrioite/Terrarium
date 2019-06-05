@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="Herbivore interactWithEnvironment method update">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="3e299272-ab13-4292-834c-8c3c6961f16c" name="Default Changelist" comment="commit before merge, nofunction changes to files">
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepositoryStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="204">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,14 +36,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="192">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1466#1467#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,11 +48,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+            <state relative-caret-position="304">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#166#167#0" expanded="true" />
                 <element signature="e#219#220#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding>
+                <element signature="e#1303#1304#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,10 +85,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/be/vdab/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepositoryStub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="287">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +114,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -116,8 +146,12 @@
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Location.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/Main.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Animal.java" />
-        <option value="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/TerrariumTest.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreInterface.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepository.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepositoryStub.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreService.java" />
+        <option value="$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java" />
         <option value="$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java" />
       </list>
@@ -135,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,11 +176,6 @@
             <path>
               <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
               <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
@@ -202,12 +230,21 @@
             </path>
             <path>
               <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Terrarium" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vdab" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Terrarium" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,26 +278,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.vdab.Main" />
+  <component name="RunManager" selected="JUnit.TerrariumTest.ADDHerbvioreTest">
+    <configuration name="TerrariumTest.ADDHerbvioreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TerrariumScrum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.vdab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.TerrariumTest" />
+      <option name="METHOD_NAME" value="ADDHerbvioreTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TerrariumTest.AddOrganismOnNegativeLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.TerrariumTest" />
+      <option name="METHOD_NAME" value="AddOrganismOnNegativeLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TerrariumTest.add2OrganismToTheSameLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.TerrariumTest" />
+      <option name="METHOD_NAME" value="add2OrganismToTheSameLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TerrariumTest.addOrganismOutOfBound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.TerrariumTest" />
+      <option name="METHOD_NAME" value="addOrganismOutOfBound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TerrariumTest.leegTerrarium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TerrariumScrum" />
+      <option name="PACKAGE_NAME" value="be.vdab.test" />
+      <option name="MAIN_CLASS_NAME" value="be.vdab.test.TerrariumTest" />
+      <option name="METHOD_NAME" value="leegTerrarium" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TerrariumTest.ADDHerbvioreTest" />
+        <item itemvalue="JUnit.TerrariumTest.leegTerrarium" />
+        <item itemvalue="JUnit.TerrariumTest.AddOrganismOnNegativeLocation" />
+        <item itemvalue="JUnit.TerrariumTest.addOrganismOutOfBound" />
+        <item itemvalue="JUnit.TerrariumTest.add2OrganismToTheSameLocation" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +354,7 @@
       <workItem from="1559577993988" duration="5000" />
       <workItem from="1559720133844" duration="217000" />
       <workItem from="1559720392402" duration="3232000" />
+      <workItem from="1559725590778" duration="3648000" />
     </task>
     <task id="LOCAL-00001" summary="TerariumTest&#10;testing add 2 organism to the same place">
       <created>1559653472418</created>
@@ -322,11 +398,61 @@
       <option name="project" value="LOCAL" />
       <updated>1559723557371</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit before merge, nofunction changes to files">
+      <created>1559724126268</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559724126268</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit before merge, nofunction changes to files">
+      <created>1559725555976</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559725555976</updated>
+    </task>
+    <task id="LOCAL-00009" summary="checks if !occupiedPlaces.contains(location)&#10;dubbel spawn opgelost door Pieter2">
+      <created>1559725812263</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559725812263</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TerrariumTest - 2019.06.05 at 11h 52m 12s.xml">
+      <configuration name="TerrariumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest - 2019.06.05 at 11h 58m 06s.xml">
+      <configuration name="TerrariumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest - 2019.06.05 at 12h 00m 30s.xml">
+      <configuration name="TerrariumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest - 2019.06.05 at 12h 01m 13s.xml">
+      <configuration name="TerrariumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest_add2OrganismToTheSameLocation - 2019.06.05 at 12h 03m 58s.xml">
+      <configuration name="TerrariumTest.add2OrganismToTheSameLocation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest_addOrganismOutOfBound - 2019.06.05 at 12h 04m 16s.xml">
+      <configuration name="TerrariumTest.addOrganismOutOfBound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest_AddOrganismOnNegativeLocation - 2019.06.05 at 12h 04m 22s.xml">
+      <configuration name="TerrariumTest.AddOrganismOnNegativeLocation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest_leegTerrarium - 2019.06.05 at 12h 04m 29s.xml">
+      <configuration name="TerrariumTest.leegTerrarium" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TerrariumTest_ADDHerbvioreTest - 2019.06.05 at 12h 06m 18s.xml">
+      <configuration name="TerrariumTest.ADDHerbvioreTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17813000" />
+    <option name="totallyTimeSpent" value="22944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,25 +465,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26308724" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4966443" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5033557" side_tool="true" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.4966443" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.504698" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49530202" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.4986577" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -368,7 +495,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Run" order="8" weight="0.23154363" />
+      <window_info active="true" anchor="right" id="Run" order="8" visible="true" weight="0.23154363" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -423,32 +550,16 @@
     <MESSAGE value="Always checks again for most Recent empty Locations List&#10;No more two organism can spawn on the same place" />
     <MESSAGE value="just new commit" />
     <MESSAGE value="commit of modified files before merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit of modified files before merge" />
+    <MESSAGE value="checks if !occupiedPlaces.contains(location)&#10;dubbel spawn opgelost door Pieter2" />
+    <MESSAGE value="commit before merge, nofunction changes to files" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before merge, nofunction changes to files" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,8 +590,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="134">
           <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -495,10 +624,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/be/vdab/test/repositories/HerbivoreRepositoryStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Herbivore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        <state relative-caret-position="304">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#166#167#0" expanded="true" />
             <element signature="e#219#220#0" expanded="true" />
@@ -508,22 +676,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/test/TerrariumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        <state relative-caret-position="192">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/vdab/domain/Terrarium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state relative-caret-position="204">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

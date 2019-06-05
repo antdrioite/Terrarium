@@ -70,7 +70,7 @@ public class TerrariumTest {
 
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void ADDHerbvioreTest() {
         testPlek.addNewHerbivore();
 

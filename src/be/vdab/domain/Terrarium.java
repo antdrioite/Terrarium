@@ -12,7 +12,9 @@ public class Terrarium {
 	public void addOrganism(Organism organism) {
 		//Location occupiedLocation = new Location(organism.getLocation().getX(), organism.getLocation().getY());
 
-
+        if (!this.getEmptyLocations().contains(organism.getLocation())) {
+            throw new IllegalArgumentException();
+        }
         if (grid.size() < 36) {
 			if (!grid.contains(organism)) {
 
@@ -22,9 +24,9 @@ public class Terrarium {
                     throw new IllegalArgumentException(" De location is negatief");
                 }
 
-			} else if (!this.getEmptyLocations().contains(organism.getLocation())) {
-                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
-			}
+//			} else if (!this.getEmptyLocations().contains(organism.getLocation())) {
+//                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
+            }
 
 
             } else if (grid.contains(organism)) {
@@ -36,7 +38,7 @@ public class Terrarium {
     public void addNewHerbivore() {
         List<Location> emptyLocations;
         emptyLocations = this.getEmptyLocations();
-        int randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size());
+        int randomNumber = (int) Math.ceil(Math.random() * getEmptyLocations().size() - 1);
         grid.add(new Herbivore(emptyLocations.get(randomNumber), 1, this));
     }
 

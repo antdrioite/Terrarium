@@ -5,6 +5,8 @@ import be.vdab.domain.Organism;
 import be.vdab.domain.Herbivore;
 import be.vdab.domain.Plant;
 import be.vdab.domain.Location;
+import be.vdab.test.repositories.HerbivoreRepository;
+import be.vdab.test.repositories.HerbivoreRepositoryStub;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,13 +18,17 @@ import static org.junit.Assert.*;
 public class TerrariumTest {
 
     private Terrarium testPlek;
+    private HerbivoreRepository herbivoreTest;
+
 
     @Before
     public void before() {
         testPlek = new Terrarium();
+        herbivoreTest = new HerbivoreRepositoryStub();
+
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void add2OrganismToTheSameLocation() {
 
         int x, y;
@@ -30,16 +36,13 @@ public class TerrariumTest {
         y = 2;
         Location testLocation = new Location(x, y);
 
-        //Herbivore one = new Herbivore(testLocation, 6, tester );
+        Herbivore three = new Herbivore(testLocation, 6, testPlek);
         Plant one = new Plant(testLocation, 4);
         Plant two = new Plant(testLocation, 5);
         testPlek.addOrganism(two);
         testPlek.addOrganism(one);
-        List<Organism> toonVeld = new ArrayList<>();
-        toonVeld = testPlek.getAllOrganisms();
-        for (Organism dier : toonVeld) {
-            System.out.println(dier.getLocation());
-        }
+        testPlek.addOrganism(three);
+
 
     }
 
@@ -64,6 +67,12 @@ public class TerrariumTest {
         Location negativeLocation = new Location(x, y);
         Plant one = new Plant(negativeLocation, 1);
         testPlek.addOrganism(one);
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ADDHerbvioreTest() {
+        testPlek.addNewHerbivore();
 
     }
 

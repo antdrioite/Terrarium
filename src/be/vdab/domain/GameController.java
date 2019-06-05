@@ -12,9 +12,12 @@ public class GameController {
 
     public void spawnPlants(){
         List<Location> emptyLocations = terrarium.getEmptyLocations();
-        int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size());
-        Plant plant = new Plant(emptyLocations.get(randomNumber), 1); //one lifeforce
-        terrarium.addOrganism(plant);
+        if (emptyLocations.size() > 0) {
+            int randomNumber = (int) Math.ceil(Math.random() * emptyLocations.size())-1;
+            Plant plant = new Plant(emptyLocations.get(randomNumber), 1); //one lifeforce
+            terrarium.addOrganism(plant);
+        }
+
     }
     public void activateOrganisms(){
         //let Carnivores interact with environment

@@ -19,17 +19,17 @@ public class Terrarium {
                 if ((organism.getLocation().getX() > 0) && (organism.getLocation().getY() > 0)) {
                     grid.add(organism);
                 } else {
-					throws new IllegalArgumentException(" De location is negatief");
+                    throw new IllegalArgumentException(" De location is negatief");
                 }
 
 			} else if (!this.getEmptyLocations().contains(organism.getLocation())) {
-				throws new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
+                throw new IllegalArgumentException(" er is al een organisme op die plek aanwezig");
 			}
 
 
             } else if (grid.contains(organism)) {
 
-			throws new IllegalArgumentException(" de index is meer dan 36 ");
+            throw new IllegalArgumentException(" de index is meer dan 36 ");
 		}
 	}
 
@@ -82,7 +82,7 @@ public class Terrarium {
 		for(int i=0;i<=5;i++){
 			for(int j=0;j<=5;j++){
 				Location location = new Location(i, j);
-				if(!emptyPlaces.contains(location)){
+                if (!occupiedPlaces.contains(location)) {
 					emptyPlaces.add(location);
 
 				}

@@ -5,16 +5,26 @@ import be.vdab.domain.Organism;
 import be.vdab.domain.Herbivore;
 import be.vdab.domain.Plant;
 import be.vdab.domain.Location;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class TerrariumTest {
 
+    private Terrarium testPlek;
+
+    @Before
+    public void before() {
+        testPlek = new Terrarium();
+    }
 
     @Test
     public void add2OrganismToTheSameLocation() {
-        Terrarium tester = new Terrarium();
+
         int x, y;
         x = 5;
         y = 2;
@@ -23,9 +33,24 @@ public class TerrariumTest {
         //Herbivore one = new Herbivore(testLocation, 6, tester );
         Plant one = new Plant(testLocation, 4);
         Plant two = new Plant(testLocation, 5);
-        tester.addOrganism(two);
-        tester.addOrganism(one);
-        //assertEquals(tester.addOrganism(one), tester.addOrganism(two));
+        testPlek.addOrganism(two);
+        testPlek.addOrganism(one);
+        List<Organism> toonVeld = new ArrayList<>();
+        toonVeld = testPlek.getAllOrganisms();
+        for (Organism dier : toonVeld) {
+            System.out.println(dier.getLocation());
+        }
+
+    }
+
+    @Test
+    public void addOrganismOutOfBound() {
+        int x, y;
+        x = 35;
+        y = 45;
+        Location outOfBoundLocation = new Location(x, y);
+
+        Plant one = new Plant(outOfBoundLocation, 1);
 
 
     }
@@ -34,4 +59,26 @@ public class TerrariumTest {
     //addNewHerbivore
     //getEmptyLocations
     //remove
+
+
+    @Test
+    public void leegTerrarium() {
+        assertTrue(this.maakTerrariumLeeg());
+    }
+
+    public boolean maakTerrariumLeeg() {
+        List<Organism> allemaal = new ArrayList<>();
+        boolean isLeeg = true;
+        allemaal = testPlek.getAllOrganisms();
+
+        for (Organism alle : allemaal) {
+            if (alle != null) {
+                testPlek.remove(alle);
+            }
+        }
+        isLeeg = true;
+        return isLeeg;
+    }
+
+
 }
